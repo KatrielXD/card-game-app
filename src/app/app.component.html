@@ -1,0 +1,25 @@
+<div class="container mt-5">
+  <h1 class="text-center mb-4">🎴 Juego de Cartas 🎴</h1>
+
+  <!-- Botones -->
+  <div class="d-flex justify-content-center mb-3">
+    <button class="btn btn-primary me-2" (click)="shuffleCards()">
+      <i class="bi bi-shuffle"></i> Barajar Cartas
+    </button>
+    <button class="btn btn-success" (click)="dealCards(5)">
+      <i class="bi bi-hand-index-thumb"></i> Repartir 5 Cartas
+    </button>
+  </div>
+
+  <!-- Cartas -->
+  <div class="row justify-content-center">
+    <div class="card-container">
+      <div *ngFor="let card of cards" class="playing-card">
+        <div class="card-value">{{ card.value }}</div>
+        <div class="card-suit">{{ getSuitSymbol(card.suit) }}</div>
+      </div>
+    </div>
+    
+    </div>
+  </div>
+

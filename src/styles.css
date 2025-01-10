@@ -1,0 +1,59 @@
+@media (max-width: 600px) {
+    .card-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .playing-card {
+      margin-bottom: 10px;
+    }
+  }
+  
+body {
+    background-color: #f0f0f5;
+    font-family: 'Noto Sans Symbols', 'Segoe UI', sans-serif;
+  }
+  
+  .playing-card {
+    font-family: 'Noto Sans Symbols', 'Segoe UI', sans-serif;
+  }
+  
+  
+  h1 {
+    font-size: 36px;
+    color: #333;
+  }
+  
+  .card-container {
+    display: flex;
+    gap: 10px; /* Espacio entre las cartas */
+    justify-content: center; /* Centra las cartas horizontalmente */
+    flex-wrap: wrap; /* Permite que las cartas pasen a la siguiente línea si hay demasiadas */
+  }
+  
+  .playing-card {
+    width: 100px;
+    height: 150px;
+    border-radius: 8px;
+    background-color: white;
+    border: 2px solid #000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    color: #333;
+    font-family: 'Segoe UI Symbol', 'Arial', sans-serif;
+  }
+  
+  .card-value {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .card-suit {
+    font-size: 36px;
+  }
+  
