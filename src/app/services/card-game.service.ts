@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class CardGameService {
-  private apiUrl = 'http://localhost:3000';
+  private apiUrl = 'https://card-game-backend-tj7j.onrender.com';
 
   constructor(private http: HttpClient) {}
 
